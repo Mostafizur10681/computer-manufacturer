@@ -1,54 +1,54 @@
 [
     {
-        "id": 1,
+        "_id": 1,
         "name": "MotherBoard",
         "img": "https://i.ibb.co/c87MNVp/slejven-djurakovic-0u-Xzo-Ez-YZ4-I-unsplash.png",
-        "description": "A motherboard is the main printed circuit board in general-purpose computers and other expandable systems. It holds and allows communication between many of the crucial electronic components of a system, such as the central processing unit and memory, and provides connectors for other peripherals",
+        "description": "Motherboard is the main printed circuit board in general-purpose computers and other expandable systems. It holds and allows communication between many of the crucial electronic components of a system, such as the central processing unit and memory, and provides connectors for other peripherals",
         "minimum": 100,
         "quantity": 1000,
         "price": 2000
     },
     {
-        "id": 2,
+        "_id": 2,
         "name": "Central Processing Unit(CPU)",
         "img": "https://i.ibb.co/Yf71ddF/joseph-greve-BPJKc4r7-eo-unsplash.png",
-        "description": "A central processing unit, also called a central processor, main processor or just processor, is the electronic circuitry that executes instructions comprising a computer program. The CPU performs basic arithmetic, logic, controlling, and input/output operations specified by the instructions in the program",
+        "description": "Central processing unit, also called a central processor, main processor or just processor, is the electronic circuitry that executes instructions comprising a computer program. The CPU performs basic arithmetic, logic, controlling, and input/output operations specified by the instructions in the program",
         "minimum": 50,
         "quantity": 3000,
         "price": 2500
     },
     {
-        "id": 3,
+        "_id": 3,
         "name": "Solid State Drive(SSD)",
         "img": "https://i.ibb.co/8nCWYMK/possessed-photography-nuc3-NFB-6po-unsplash.png",
-        "description": "",
+        "description": "Solid-state drive is a solid-state storage device that uses integrated circuit assemblies to store data persistently, typically using flash memory, and functioning as secondary storage in the hierarchy of computer storage",
         "minimum": 10,
         "quantity": 500,
         "price": 3000
     },
     {
-        "id": 4,
+        "_id": 4,
         "name": "KeyBoard",
         "img": "https://i.ibb.co/FqH4W0q/dries-augustyns-Wz-KPT0-Iu-Ur-U-unsplash.png",
-        "description": "A computer keyboard is a peripheral input device modeled after the typewriter keyboard which uses an arrangement of buttons or keys to act as mechanical levers or electronic switches",
+        "description": "Computer keyboard is a peripheral input device modeled after the typewriter keyboard which uses an arrangement of buttons or keys to act as mechanical levers or electronic switches",
         "minimum": 500,
         "quantity": 3000,
         "price": 1000
     },
     {
-        "id": 5,
+        "_id": 5,
         "name": "Mouse",
         "img": "https://i.ibb.co/580tqrK/maar-gaming-f-G4-BTSKPo3w-unsplash-1.png",
-        "description": "A computer mouse is a hand-held pointing device that detects two-dimensional motion relative to a surface. This motion is typically translated into the motion of a pointer on a display, which allows a smooth control of the graphical user interface of a computer.",
+        "description": "Computer mouse is a hand-held pointing device that detects two-dimensional motion relative to a surface. This motion is typically translated into the motion of a pointer on a display, which allows a smooth control of the graphical user interface of a computer.",
         "minimum": 1000,
         "quantity": 4000,
         "price": 400
     },
     {
-        "id": 6,
+        "_id": 6,
         "name": "Hard Disk(HDD)",
         "img": "https://i.ibb.co/cLQqKJ8/vincent-botta-w-YD-wfif-JVs-unsplash.png",
-        "description": "",
+        "description": "Hard disk drive, hard disk, hard drive, or fixed disk is an electro-mechanical data storage device that stores and retrieves digital data using magnetic storage and one or more rigid rapidly rotating platters coated with magnetic material",
         "minimum": 30,
         "quantity": 500,
         "price": 2000
