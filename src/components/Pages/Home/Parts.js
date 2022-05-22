@@ -11,7 +11,7 @@ const Parts = () => {
     }, [])
     return (
         <div className='px-8 mt-24'>
-            <h2 className='text-5xl font-bold text-center mb-8'>Our Available <span className='text-blue-900'>Parts</span></h2>
+            <h2 className='text-5xl font-bold text-center mb-12 uppercase'>Our Available <span className='text-blue-900'>Parts</span></h2>
 
             <div className='grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 grid-cols-1 gap-5'>
                 {
