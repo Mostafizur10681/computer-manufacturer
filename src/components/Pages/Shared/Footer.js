@@ -1,27 +1,47 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { } from '@fortawesome/free-solid-svg-icons';
 import React from 'react';
+import { Link } from 'react-router-dom';
+import logo from '../../../assets/logo.png'
+import facebook from '../../../assets/icon/facebook.png';
+import whatapp from '../../../assets/icon/whatsapp.png';
+import instagram from '../../../assets/icon/instgram.jpg';
+
 
 const Footer = () => {
     return (
-        <footer class="footer p-10 bg-neutral text-neutral-content">
-            <div>
+        <footer class="footer p-12 bg-blue-900 text-base-content">
+            <div className='text-white'>
+                <img width='70px' height='70px' src={logo} alt="" srcset="" />
+                <p>Computer Parts
+                    <br />
+                    Providing reliable tech since 1992</p>
+                <div class="grid grid-flow-col gap-4">
+                    <Link to='/'><img src={facebook} alt={facebook} srcset="" /></Link>
+                    <Link to='/'><img src={instagram} alt={instagram} srcset="" /></Link>
+                    <Link to='/'><img src={whatapp} alt={whatapp} srcset="" /></Link>
+                </div>
+            </div>
+            <div className='text-white'>
                 <span class="footer-title">Services</span>
-                <a class="link link-hover">Branding</a>
-                <a class="link link-hover">Design</a>
-                <a class="link link-hover">Marketing</a>
-                <a class="link link-hover">Advertisement</a>
+                <Link to='/' class="link link-hover">Branding</Link>
+                <Link to='/' class="link link-hover">Design</Link>
+                <Link to='/' class="link link-hover">Marketing</Link>
+                <Link to='/' class="link link-hover">Advertisement</Link>
             </div>
-            <div>
+            <div className='text-white'>
                 <span class="footer-title">Company</span>
-                <a class="link link-hover">About us</a>
-                <a class="link link-hover">Contact</a>
-                <a class="link link-hover">Jobs</a>
-                <a class="link link-hover">Press kit</a>
+                <Link to='/' class="link link-hover">About us</Link>
+                <Link to='/' class="link link-hover">Contact</Link>
+                <Link to='/' class="link link-hover">Jobs</Link>
+                <Link to='/' class="link link-hover">Press kit</Link>
             </div>
-            <div>
+            <div className='text-white'>
                 <span class="footer-title">Legal</span>
-                <a class="link link-hover">Terms of use</a>
-                <a class="link link-hover">Privacy policy</a>
-                <a class="link link-hover">Cookie policy</a>
+                <Link to='/' class="link link-hover">Terms of use</Link>
+                <Link to='/' class="link link-hover">Privacy policy</Link>
+                <Link to='/' class="link link-hover">Privacy policy</Link>
+                <Link to='/' class="link link-hover">Cookie policy</Link>
             </div>
         </footer>
     );

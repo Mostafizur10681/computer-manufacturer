@@ -1,10 +1,10 @@
-import { faBuilding, faFlag, faPeopleCarryBox, faPeopleGroup, faScrewdriver, faScrewdriverWrench, faStar, faThumbsUp } from '@fortawesome/free-solid-svg-icons';
+import { faBuilding, faPeopleCarryBox, faScrewdriverWrench, faStar, } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 
 const Summary = () => {
     return (
-        <div className='px-8 my-24'>
+        <div className='px-8 my-24 '>
             <h2 className='text-5xl font-bold text-center mb-2 uppercase text-blue-900'>Milions Business Trust US</h2>
             <p className='text-center text-xl mb-12 uppercase'>Try to Understand Customer Expractation</p>
 

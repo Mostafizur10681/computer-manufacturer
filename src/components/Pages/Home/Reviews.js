@@ -10,7 +10,7 @@ const Reviews = () => {
             .then(data => setReviews(data))
     }, [])
     return (
-        <div className='mb-24 px-12'>
+        <div className=' px-12'>
             <p className='font-bold text-center text-xl uppercase text-blue-900'>Testimonials</p>
             <h2 className='text-5xl font-bold text-center mb-12 uppercase'>What our Clients say About us</h2>
             <div className='grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1'>
