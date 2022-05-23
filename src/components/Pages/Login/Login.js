@@ -3,6 +3,7 @@ import { useSendPasswordResetEmail, useSignInWithEmailAndPassword, useSignInWith
 import { useForm } from "react-hook-form";
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
+import Loading from '../Shared/Loading/Loading';
 
 
 const Login = () => {
@@ -27,7 +28,7 @@ const Login = () => {
     }, [user, gUser, from, navigate])
 
     if (loading || gLoading) {
-        return loading
+        return <Loading></Loading>
     }
 
     if (error || gError) {

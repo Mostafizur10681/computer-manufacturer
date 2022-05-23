@@ -4,12 +4,12 @@ import React from 'react';
 
 const Summary = () => {
     return (
-        <div className='px-8 my-24 '>
+        <div className='px-8 my-40 '>
             <h2 className='text-5xl font-bold text-center mb-2 uppercase text-blue-900'>Milions Business Trust US</h2>
             <p className='text-center text-xl mb-12 uppercase'>Try to Understand Customer Expractation</p>
 
-            <div className='grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-5'>
-                <div class="card w-64 bg-base-100 shadow-2xl">
+            <div className='grid grid-cols-1  lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-5'>
+                <div class="card w-64 mx-auto bg-base-100 shadow-2xl">
                     <div class="card w-64 bg-base-100 mx-auto">
                         <figure class="px-10 pt-10">
                             <FontAwesomeIcon className='text-blue-900 text-4xl' icon={faPeopleCarryBox}></FontAwesomeIcon>
@@ -21,7 +21,7 @@ const Summary = () => {
                     </div>
 
                 </div>
-                <div class="card w-64 bg-base-100 shadow-xl">
+                <div class="card w-64 mx-auto bg-base-100 shadow-xl">
                     <div class="card w-64 bg-base-100 mx-auto">
                         <figure class="px-10 pt-10">
                             <FontAwesomeIcon className='text-blue-900 text-4xl' icon={faBuilding}></FontAwesomeIcon>
@@ -32,7 +32,7 @@ const Summary = () => {
                         </div>
                     </div>
                 </div>
-                <div class="card w-64 bg-base-100 shadow-xl">
+                <div class="card w-64 mx-auto bg-base-100 shadow-xl">
                     <div class="card w-64 bg-base-100 mx-auto">
                         <figure class="px-10 pt-10">
                             <FontAwesomeIcon className='text-blue-900 text-4xl' icon={faStar}></FontAwesomeIcon>
@@ -43,7 +43,7 @@ const Summary = () => {
                         </div>
                     </div>
                 </div>
-                <div class="card w-64 bg-base-100 shadow-xl">
+                <div class="card w-64 mx-auto bg-base-100 shadow-xl">
                     <div class="card w-64 bg-base-100 mx-auto">
                         <figure class="px-10 pt-10">
                             <FontAwesomeIcon className='text-blue-900 text-4xl' icon={faScrewdriverWrench}></FontAwesomeIcon>
