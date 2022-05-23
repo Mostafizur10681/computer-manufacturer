@@ -5,6 +5,7 @@ import Footer from './components/Pages/Shared/Footer';
 import { Route, Routes } from 'react-router-dom';
 import Home from './components/Pages/Home/Home';
 import Blogs from './components/Pages/Blogs/Blogs';
+import NotFound from './components/Pages/NotFound/NotFound';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
+        <Route path='*' element={<NotFound></NotFound>}></Route>
 
       </Routes>
       <Footer></Footer>

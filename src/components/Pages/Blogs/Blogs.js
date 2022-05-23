@@ -45,15 +45,6 @@ const Blogs = () => {
                         You'll lose control of the state in all of your components.</p>
                 </div>
             </blockquote>
-            <blockquote class="card mx-auto w-3/5 bg-base-100 mb-8 px-12 shadow-2xl">
-                <div class="card-body ">
-                    <h2 class="card-title text-blue-900 text-2xl"> Why you do not set the state directly in React?</h2>
-                    <p>It should not update directly because If you update it directly, executing setState() thereafter may just overwrite your changes.
-                        This.state is not changed instantly when you directly update the state.
-                        Instead, it generates a pending state transition, which will only yield the current value if accessed after using this function.
-                        You'll lose control of the state in all of your components.</p>
-                </div>
-            </blockquote>
 
             <blockquote class="card mx-auto w-3/5 bg-base-100 mb-8 px-12 shadow-2xl">
                 <div class="card-body ">
