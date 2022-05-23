@@ -23,7 +23,7 @@ const Navbar = () => {
                 <Link className='btn btn-ghost' to='/'><img src={logo} alt={logo} srcset="" /></Link>
                 <a className="btn btn-ghost normal-case text-xl">Computer Parts</a>
             </div>
-            <div className="navbar-center hidden lg:flex">
+            <div className="navbar-center hidden lg:flex navbar-end">
                 <ul className="menu menu-horizontal p-0">
                     {navItem}
 
