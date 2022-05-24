@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import carWareHouse from '../../../assets/carWareHouse.jpg';
 import englishTutor from '../../../assets/EnglishTutor.jpg';
 import macBook from '../../../assets/macBook.jpg';
