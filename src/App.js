@@ -14,6 +14,7 @@ import Orders from './components/Pages/Dashboard/Orders';
 import AddReview from './components/Pages/Dashboard/AddReview';
 import MyProfile from './components/Pages/Dashboard/MyProfile';
 import MyProtfolio from './components/Pages/MyProtfolio/MyProtfolio';
+import PartsDetails from './components/Pages/PartsDetails/PartsDetails';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/myprotfolio' element={<MyProtfolio></MyProtfolio>}></Route>
+        <Route path='/part/:id' element={<PartsDetails></PartsDetails>}></Route>
         <Route path="dashboard" element={<RequireAuth><Dashboard /></RequireAuth>} >
           <Route index element={<Orders></Orders>}></Route>
           <Route path="addreview" element={<AddReview></AddReview>}></Route>
