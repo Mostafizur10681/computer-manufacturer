@@ -9,9 +9,6 @@ const Orders = () => {
     const [user] = useAuthState(auth);
     const navigate = useNavigate()
 
-    console.log(orders)
-    console.log(user.email)
-
     useEffect(() => {
         if (user) {
             fetch(`http://localhost:5000/placeorder?email=${user.email}`, {
@@ -21,7 +18,7 @@ const Orders = () => {
                 }
             })
                 .then(res => {
-                    console.log('res', res);
+                    // console.log('res', res);
                     if (res.status === 401 || res.status === 403) {
                         signOut(auth);
                         localStorage.removeItem('accessToken');
@@ -35,31 +32,6 @@ const Orders = () => {
                 });
         }
     }, [user])
-
-    // useEffect(() => {
-    //     fetch(`http://localhost:5000/placeorder?email=${user.email}`)
-    //         .then(res => res.json())
-    //         .then(data => setOrders(data));
-    // }, [])
-
-
-    // useEffect(() => {
-    //         fetch(`http://localhost:5000/placeorder?email=${user.email}`, {
-    //             // method: 'GET',
-    //             // headers: {
-    //             //     'authorization': `Bearer ${localStorage.getItem('accessToken')}`
-    //             // }
-    //         })
-    //             .then(res => {
-    //                 console.log(res)
-    //                 return res.json()
-    //             })
-    //             .then(data => {
-    //                 setOrders(data)
-    //             })
-    //     }
-    // }, [user])
-
 
     return (
         <div>
