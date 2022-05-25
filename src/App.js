@@ -15,6 +15,8 @@ import AddReview from './components/Pages/Dashboard/AddReview';
 import MyProfile from './components/Pages/Dashboard/MyProfile';
 import MyProtfolio from './components/Pages/MyProtfolio/MyProtfolio';
 import PartsDetails from './components/Pages/PartsDetails/PartsDetails';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
@@ -35,7 +37,9 @@ function App() {
         <Route path='*' element={<NotFound></NotFound>}></Route>
 
       </Routes>
-      <Footer></Footer>
+      <Footer>
+      </Footer>
+      <ToastContainer />
     </div>
   );
 }

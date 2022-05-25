@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useParams } from 'react-router-dom';
 import auth from '../../../firebase.init';
-import UserInfo from './UserInfo';
+import 'react-toastify/dist/ReactToastify.css';
+import { toast } from 'react-toastify';
 
 const PartsDetails = () => {
     const { id } = useParams();
@@ -29,15 +30,24 @@ const PartsDetails = () => {
             customerName: user.displayName,
             phone: e.target.phone.value,
             address: e.target.address.value,
-            placeOrderQuantity: e.target.quantity.value
+            placeOrderQuantity: e.target.quantity.value,
+            placeOrderPrice: e.target.quantity.value * price,
+
         }
         fetch('http://localhost:5000/placeOrder', {
             method: 'POST',
-            headers: { 'content-type': 'application/json' },
+            headers: {
+                'content-type': 'application/json'
+            },
             body: JSON.stringify(placeOrder)
         })
             .then(res => res.json())
-            .then(data => console.log(data))
+            .then(data => {
+                toast.success('Your order added successfully')
+                console.log(data)
+            }
+
+            )
 
     }
     return (
