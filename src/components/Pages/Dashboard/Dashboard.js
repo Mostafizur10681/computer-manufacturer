@@ -21,7 +21,10 @@ const Dashboard = () => {
                     <li><button className='btn bg-blue-900 mb-3 text-white'><Link to="/dashboard">My Orders</Link></button></li>
                     <li><button className='btn bg-blue-900 mb-3 text-white'><Link to="/dashboard/addreview">Add a Review</Link></button></li>
                     <li><button className='btn bg-blue-900 mb-3 text-white'><Link to="/dashboard/myprofile">My Profile</Link></button></li>
-                    {admin && <li><button className='btn bg-blue-900 mb-3 text-white'><Link to="/dashboard/users">All Users</Link></button></li>}
+                    {admin && <li><button className='btn bg-blue-900 mb-3 text-white'><Link to="/dashboard/users">Make Admin</Link></button></li>}
+                    {admin && <li><button className='btn bg-blue-900 mb-3 text-white'><Link to="/dashboard/manageproduct">Manage Product</Link></button></li>}
+                    {admin && <li><button className='btn bg-blue-900 mb-3 text-white'><Link to="/dashboard/manageorder">Manage Order</Link></button></li>}
+                    {admin && <li><button className='btn bg-blue-900 mb-3 text-white'><Link to="/dashboard/addproduct">Add a Product</Link></button></li>}
                 </ul>
 
             </div>

@@ -19,6 +19,11 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Users from './components/Pages/Dashboard/Users';
 import Reviews from './components/Pages/Home/Reviews';
+import RequireAdmin from './components/Pages/Login/RequireAdmin';
+import Payment from './components/Pages/Dashboard/Payment';
+import ManageProduct from './components/Pages/Dashboard/ManageProduct';
+import ManageOrder from './components/Pages/Dashboard/ManageOrder';
+import AddProduct from './components/Pages/Dashboard/AddProduct';
 
 function App() {
   return (
@@ -29,12 +34,16 @@ function App() {
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/myprotfolio' element={<MyProtfolio></MyProtfolio>}></Route>
         <Route path='/review' element={<Reviews></Reviews>}></Route>
-        <Route path='/part/:id' element={<PartsDetails></PartsDetails>}></Route>
+        <Route path='/part/:id' element={<RequireAuth><PartsDetails></PartsDetails></RequireAuth>}></Route>
         <Route path="dashboard" element={<RequireAuth><Dashboard /></RequireAuth>} >
           <Route index element={<Orders></Orders>}></Route>
           <Route path="addreview" element={<AddReview></AddReview>}></Route>
+          <Route path="payment/:id" element={<Payment></Payment>}></Route>
           <Route path="myprofile" element={<MyProfile></MyProfile>}></Route>
-          <Route path="users" element={<Users></Users>}></Route>
+          <Route path="users" element={<RequireAdmin><Users></Users></RequireAdmin>}></Route>
+          <Route path="manageproduct" element={<RequireAdmin><ManageProduct></ManageProduct></RequireAdmin>}></Route>
+          <Route path="manageorder" element={<RequireAdmin><ManageOrder></ManageOrder></RequireAdmin>}></Route>
+          <Route path="addproduct" element={<RequireAdmin><AddProduct></AddProduct></RequireAdmin>}></Route>
         </Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/signUp' element={<SignUp></SignUp>}></Route>

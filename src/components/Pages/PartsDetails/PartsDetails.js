@@ -44,7 +44,7 @@ const PartsDetails = () => {
             .then(res => res.json())
             .then(data => {
                 toast.success('Your order added successfully')
-                console.log(data)
+                // console.log(data)
             }
 
             )

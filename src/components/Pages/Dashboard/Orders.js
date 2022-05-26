@@ -1,8 +1,9 @@
 import { signOut } from 'firebase/auth';
 import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
-import { Navigate, useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
+import Order from './Order';
 
 const Orders = () => {
     const [orders, setOrders] = useState([])
@@ -18,7 +19,7 @@ const Orders = () => {
                 }
             })
                 .then(res => {
-                    // console.log('res', res);
+
                     if (res.status === 401 || res.status === 403) {
                         signOut(auth);
                         localStorage.removeItem('accessToken');
@@ -37,35 +38,26 @@ const Orders = () => {
         <div>
             <div class="overflow-x-auto">
                 <table class="table w-full">
-                    {/* <!-- head --> */}
+
                     <thead>
                         <tr>
                             <th></th>
                             <th>Name</th>
                             <th>Price</th>
                             <th>Quantity</th>
-                            <th>Action</th>
                             <th>Payment</th>
+                            <th>Action</th>
                         </tr>
                     </thead>
                     <tbody>
                         {
-                            orders.map((a, index) =>
-                                <tr>
-                                    <th>{index + 1}</th>
-                                    <td>{a.placeOrderProductName}</td>
-                                    <td>{a.placeOrderPrice}</td>
-                                    <td>{a.placeOrderQuantity}</td>
-                                    <td>
-                                        <button class="btn bg-green-500 btn-xs">Payment</button>
-                                    </td>
-                                    <td>
-                                        <button class="btn bg-red-500 btn-xs">Delete</button>
-                                    </td>
+                            orders.map((a, index) => <Order
+                                key={a._id}
+                                a={a}
+                                index={index}
+                            ></Order>
 
-                                </tr>)
-                        }
-
+                            )}
 
                     </tbody>
                 </table>
