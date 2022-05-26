@@ -28,7 +28,13 @@ const Order = ({ a, index }) => {
             <td>{a.placeOrderPrice}</td>
             <td>{a.placeOrderQuantity}</td>
             <td>
-                {!a.paid && <Link to={`/dashboard/payment/${a._id}`}><button class="btn bg-green-500 btn-xs">Payment</button></Link>}
+                {a.placeOrderPrice && !a.paid && (
+                    <Link to={`/dashboard/payment/${a._id}`}>
+                        <button className="btn btn-xs btn-secondary lg:px-5">
+                            Pay
+                        </button>
+                    </Link>
+                )}
                 {a.paid && <span class="btn text-seccess">Paid</span>}
             </td>
             <td>

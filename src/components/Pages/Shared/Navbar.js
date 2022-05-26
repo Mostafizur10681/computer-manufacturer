@@ -22,7 +22,7 @@ const Navbar = () => {
         {
             user && <li><Link to='/dashboard'>Dashboard</Link></li>
         }
-        <li>{user ? <button onClick={logout} class="btnbtn-ghost text-lg">Sign Out <FontAwesomeIcon icon={faRightFromBracket}></FontAwesomeIcon></button> : <Link to='/login'>Login</Link>}</li>
+        <li>{user ? <button onClick={logout} class="btnbtn-ghost text-lg">Sign Out <FontAwesomeIcon icon={faRightFromBracket} className='text-red-500'></FontAwesomeIcon></button> : <Link to='/login'>Login</Link>}</li>
     </>
     return (
         <div className="navbar bg-base-300 px-8">
