@@ -10,7 +10,7 @@ const ManageProduct = () => {
         isLoading,
         refetch,
     } = useQuery("parts", () =>
-        fetch('http://localhost:5000/part').then((res) => res.json())
+        fetch('https://still-thicket-10421.herokuapp.com/part').then((res) => res.json())
     );
 
     if (isLoading) {

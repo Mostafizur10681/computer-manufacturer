@@ -5,7 +5,7 @@ import { toast } from 'react-toastify';
 const Order = ({ a, index }) => {
 
     // const handledelete = id => {
-    //     fetch(`http://localhost:5000/placeorder/${_id}`, {
+    //     fetch(`https://still-thicket-10421.herokuapp.com/placeorder/${_id}`, {
     //         method: "DELETE",
     //         headers: {
     //             authorization: `Bearer ${localStorage.getItem("accessToken")}`,

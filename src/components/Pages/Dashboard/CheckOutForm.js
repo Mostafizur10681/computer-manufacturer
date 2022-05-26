@@ -15,7 +15,7 @@ const CheckOutForm = ({ order }) => {
     const { _id, placeOrderPrice, customerName, customerEmail } = order;
 
     useEffect(() => {
-        fetch("http://localhost:5000/create-payment-intent", {
+        fetch("https://still-thicket-10421.herokuapp.com/create-payment-intent", {
             method: "POST",
             headers: {
                 "content-type": "application/json",
@@ -83,7 +83,7 @@ const CheckOutForm = ({ order }) => {
                 transactionId: paymentIntent.id,
             };
 
-            fetch(`http://localhost:5000/placeorder/${_id}`, {
+            fetch(`https://still-thicket-10421.herokuapp.com/placeorder/${_id}`, {
                 method: "PATCH",
                 headers: {
                     "content-type": "application/json",
