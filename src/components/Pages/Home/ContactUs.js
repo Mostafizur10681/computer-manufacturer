@@ -16,7 +16,7 @@ const ContactUs = () => {
                     <br />
                     <textarea className="textarea w-80 lg:w-96  rounded-lg textarea-bordered" style={{ height: '136px' }} placeholder="Your Message"></textarea>
                     <div className='mt-6'>
-                        <button class="btn bg-blue-900">place order</button>
+                        <button class="btn bg-blue-900">Contact Us</button>
                     </div>
                 </form>
             </div>

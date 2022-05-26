@@ -14,7 +14,7 @@ const Footer = () => {
             <div class="footer p-12 bg-blue-900 text-base-content">
                 <div className='text-white'>
                     <img width='70px' height='70px' src={logo} alt="" srcset="" />
-                    <p>Computer Parts
+                    <p>Gadgets
                         <br />
                         Providing reliable tech since 1992</p>
                     <div class="grid grid-flow-col gap-4">
@@ -47,7 +47,7 @@ const Footer = () => {
 
             </div>
             <div className='pb-4 bg-blue-900 text-white text-center'>
-                <p><small>Copyright © 2022 - All right reserved by Computer Parts</small></p>
+                <p><small>Copyright © 2022 - All right reserved by Gadgets</small></p>
             </div>
         </footer>
     );

@@ -9,13 +9,13 @@ const AboutMe = () => {
             <div className='grid grid-cols-1 lg:grid-cols-2'>
                 <div>
                     <h2 className=' font-bold mb-3 text-3xl uppercase'>Personal Infromation</h2>
-                    <h4>Name: <span className='font-bold mb-2'>Md.Mostafizur Rahman</span></h4>
-                    <h4>Email: <span className='font-bold mb-2'>sourav10681@gmail.com</span></h4>
-                    <p>phone: <span className='font-bold mb-2'>(+88)01644823123</span></p>
-                    <p>Address: <span className='font-bold mb-2'>Dhaka,Bangladesh</span></p>
-                    <p>Linkdin: <span className='font-bold mb-2'>https://www.linkedin.com/in/md-mostafizur-rahman/</span></p>
-                    <p>Github: <span className='font-bold mb-2'>https://github.com/Mostafizur10681</span></p>
-                    <p>Facebook: <span className='font-bold mb-2'>https://www.facebook.com/profile.php?id=100010110405257</span></p>
+                    <h4 className=' mb-2 font-bold'>Name: Md.Mostafizur Rahman</h4>
+                    <h4 className=' mb-2 font-bold'>Email: sourav10681@gmail.com</h4>
+                    <p className=' mb-2 font-bold'>phone: (+88)01644823123</p>
+                    <p className=' mb-2 font-bold'>Address: Dhaka,Bangladesh</p>
+                    <p className=' mb-2 font-bold'>Linkdin: https://www.linkedin.com/in/md-mostafizur-rahman/</p>
+                    <p className=' mb-2 font-bold'>Github: https://github.com/Mostafizur10681</p>
+                    <p className=' mb-2 font-bold'>Facebook:https://www.facebook.com/profile.php?id=100010110405257</p>
 
 
                     <button class="btn mt-5 mb-5 bg-blue-900">Download CV <FontAwesomeIcon className='text-white text-2xl pl-2' icon={faArrowsDownToLine}></FontAwesomeIcon></button>

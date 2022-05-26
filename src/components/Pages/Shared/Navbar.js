@@ -1,9 +1,11 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { signOut } from 'firebase/auth';
 import React from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom';
 import logo from '../../../assets/logo.png'
 import auth from '../../../firebase.init';
+import { faRightFromBracket } from '@fortawesome/free-solid-svg-icons';
 
 const Navbar = () => {
     const [user] = useAuthState(auth);
@@ -20,7 +22,7 @@ const Navbar = () => {
         {
             user && <li><Link to='/dashboard'>Dashboard</Link></li>
         }
-        <li>{user ? <button onClick={logout} class="btn btn-ghost">Sign Out</button> : <Link to='/login'>Login</Link>}</li>
+        <li>{user ? <button onClick={logout} class="btnbtn-ghost text-lg">Sign Out <FontAwesomeIcon icon={faRightFromBracket}></FontAwesomeIcon></button> : <Link to='/login'>Login</Link>}</li>
     </>
     return (
         <div className="navbar bg-base-300 px-8">
@@ -34,8 +36,9 @@ const Navbar = () => {
                         {navItem}
                     </ul>
                 </div>
-                <Link className='btn btn-ghost' to='/'><img src={logo} alt={logo} srcset="" /></Link>
-                <a className="btn btn-ghost normal-case text-xl">Computer Parts</a>
+                <Link className='btn btn-ghost' to='/'><img src={logo} alt={logo} srcset="" />
+                    <a className="btn btn-ghost normal-case text-xl uppercase text-blue-900">Gadgets</a>
+                </Link>
             </div>
             <div className="navbar-end w-full hidden lg:flex ">
                 <ul className="menu menu-horizontal text-lg p-0">

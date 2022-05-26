@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { toast } from 'react-toastify';
 
-const UserRow = ({ user, refetch }) => {
+const UserRow = ({ user, refetch, index }) => {
+
     const { _id, email, role } = user;
     const makeAdmin = () => {
         fetch(`http://localhost:5000/user/admin/${email}`, {
@@ -29,10 +30,14 @@ const UserRow = ({ user, refetch }) => {
     }
     return (
         <tr>
-            <th>1</th>
+            <th>{index + 1}</th>
             <td>{email}</td>
-            <td>{role !== 'admin' && <button onClick={makeAdmin} class="btn btn-xs">Make Admin</button>}</td>
-            <td><button onClick={() => handleDelete(_id)} class="btn btn-xs">Remove User</button></td>
+            <td>{role !== 'admin' && <button onClick={makeAdmin} class="btn btn-xs bg-blue-900">Make Admin</button>}</td>
+            <td>
+
+                <label for="delete-modal" onClick={() => handleDelete(_id)} class="btn btn-xs bg-red-500">Remove User</label>
+            </td>
+
         </tr>
     );
 };

@@ -1,20 +1,17 @@
 [
     {
-        "_id": "1",
         "name": "Foto Sushi",
         "img": "https://i.ibb.co/H4TnzX3/foto-sushi.jpg",
         "review": "It's great for gaming thanks to its low click latency and customizable CPI and polling rate. ",
         "ratings": 4
     },
     {
-        "_id": "2",
         "name": "Harps",
         "img": "https://i.ibb.co/Z61YqbZ/harps.jpg",
         "review": "It feels fairly well-built with its honeycomb design, and it's extremely light. But the sensor undershoots a fair amount when moving at a fast speed.",
         "ratings": 3
     },
     {
-        "_id": "3",
         "name": "Jonas",
         "img": "https://i.ibb.co/vzRVqBR/jonas.jpg",
         "review": "It has extremely low click latency, a high maximum polling rate, and we can reprogram most of its buttons.",
