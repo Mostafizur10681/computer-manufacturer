@@ -7,12 +7,13 @@ const DeleteConfirmModal = ({
     refetch,
 }) => {
     const handleDelete = (id) => {
-        fetch('http://localhost:5000/products/${id}', {
+        fetch(`http://localhost:5000/part/${id}`, {
             method: "DELETE",
             headers: {
                 authorization: `Bearer ${localStorage.getItem("accessToken")}`,
             },
         })
+
             .then((res) => res.json())
             .then((data) => {
                 console.log(data);
@@ -31,9 +32,7 @@ const DeleteConfirmModal = ({
                     <h3 class="font-bold text-md text-red-500">
                         Are you sure want to delete ''{deletingProduct.name}'' ?
                     </h3>
-                    <p class="py-4">
-                        If you click on delete button it will be deleted forever.
-                    </p>
+
                     <div class="modal-action">
                         <button
                             onClick={() => handleDelete(deletingProduct._id)}

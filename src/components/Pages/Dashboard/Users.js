@@ -1,10 +1,11 @@
 import { React, useState } from 'react';
 import { useQuery } from 'react-query';
 import Loading from '../Shared/Loading/Loading';
+import DeleteUserModal from './DeleteUserModal';
 import UserRow from './UserRow';
 
 const Users = () => {
-    // const [deleteUser, setDeleteUser] = useState(null);
+    const [deleteUser, setDeleteUser] = useState(null);
     const { data: users, isLoading, refetch } = useQuery('users', () => fetch('http://localhost:5000/user', {
         method: 'GET',
         headers: {
@@ -43,6 +44,14 @@ const Users = () => {
 
                 </table>
             </div>
+            {/* {deleteUser && (
+                <DeleteUserModal
+                    key={deleteUser._id}
+                    deleteUser={deleteUser}
+                    setDeleteUser={setDeleteUser}
+                    refetch={refetch}
+                ></DeleteUserModal>
+            )} */}
 
         </div>
     );

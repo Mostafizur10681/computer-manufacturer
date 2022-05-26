@@ -3,7 +3,7 @@ import './Loading.css'
 
 const Loading = () => {
     return (
-        <div className='mx-auto  w-full my-24'>
+        <div className='mx-auto flex items-center justify-center w-full my-24'>
             <button class="btn loading">loading</button>
         </div>
     );
