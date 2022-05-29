@@ -4,23 +4,6 @@ import { toast } from 'react-toastify';
 
 const Order = ({ a, index }) => {
 
-    // const handledelete = id => {
-    //     fetch(`https://still-thicket-10421.herokuapp.com/placeorder/${_id}`, {
-    //         method: "DELETE",
-    //         headers: {
-    //             authorization: `Bearer ${localStorage.getItem("accessToken")}`,
-    //         },
-    //     })
-
-    //         .then((res) => res.json())
-    //         .then((data) => {
-    //             console.log(data);
-    //             if (data.deletedCount) {
-    //                 toast.success("Deleted");
-
-    //             }
-    //         });
-    // }
     return (
         <tr>
             <th>{index + 1}</th>
@@ -30,15 +13,15 @@ const Order = ({ a, index }) => {
             <td>
                 {a.placeOrderPrice && !a.paid && (
                     <Link to={`/dashboard/payment/${a._id}`}>
-                        <button className="btn btn-xs btn-secondary lg:px-5">
+                        <button className="btn btn-secondary rounded-full btn-sm text-white lg:px-5">
                             Pay
                         </button>
                     </Link>
                 )}
-                {a.paid && <span class="btn text-seccess">Paid</span>}
+                {a.paid && <span class="btn btn-success rounded-full btn-sm text-white">Paid</span>}
             </td>
             <td>
-                <button class="btn bg-red-500 btn-xs">Delete</button>
+                <button class="btn btn-error rounded-full btn-sm text-white">Delete</button>
             </td>
 
         </tr>

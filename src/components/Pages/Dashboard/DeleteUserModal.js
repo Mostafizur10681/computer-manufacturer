@@ -21,13 +21,6 @@ const DeleteUserModal = ({ deleteUser, setDeleteUser, refetch }) => {
                         >
                             Delete
                         </button>
-                        {/* <label
-                            onClick={() => setDeletingProduct(part)}
-                            for="delete-confirm-modal"
-                            class="btn btn-xs btn-error"
-                        >
-                            Delete
-                        </label> */}
                         <label for="delete-confirm-modal" class="btn btn-xs btn-accent">
                             Cancel
                         </label>

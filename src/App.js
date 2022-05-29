@@ -24,6 +24,7 @@ import ManageProduct from './components/Pages/Dashboard/ManageProduct';
 import ManageOrder from './components/Pages/Dashboard/ManageOrder';
 import AddProduct from './components/Pages/Dashboard/AddProduct';
 import Payment from './components/Pages/Dashboard/Payment';
+import ReviewPage from './components/Pages/ReviewPage/ReviewPage';
 
 
 function App() {
@@ -34,7 +35,7 @@ function App() {
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/myprotfolio' element={<MyProtfolio></MyProtfolio>}></Route>
-        <Route path='/review' element={<Reviews></Reviews>}></Route>
+        <Route path='/review' element={<ReviewPage></ReviewPage>}></Route>
 
         <Route path='/part/:id' element={<RequireAuth><PartsDetails></PartsDetails></RequireAuth>}></Route>
         <Route path="dashboard" element={<RequireAuth><Dashboard /></RequireAuth>} >

@@ -1,13 +1,16 @@
 import { signOut } from 'firebase/auth';
 import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
+
 import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
+
 import Order from './Order';
 
 const Orders = () => {
     const [orders, setOrders] = useState([])
     const [user] = useAuthState(auth);
+    console.log(user)
     const navigate = useNavigate()
 
     useEffect(() => {

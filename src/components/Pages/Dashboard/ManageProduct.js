@@ -53,7 +53,7 @@ const ManageProduct = () => {
                                     <label
                                         onClick={() => setDeletingProduct(part)}
                                         for="delete-confirm-modal"
-                                        class="btn btn-xs btn-error"
+                                        class="btn btn-error rounded-full btn-sm text-white"
                                     >
                                         Delete
                                     </label>

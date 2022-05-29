@@ -32,10 +32,10 @@ const UserRow = ({ user, refetch, index }) => {
         <tr>
             <th>{index + 1}</th>
             <td>{email}</td>
-            <td>{role !== 'admin' && <button onClick={makeAdmin} class="btn btn-xs bg-blue-900">Make Admin</button>}</td>
+            <td>{role !== 'admin' && <button onClick={makeAdmin} class="btn btn-success rounded-full btn-sm text-white">Make Admin</button>}</td>
             <td>
 
-                <label for="delete-modal" onClick={() => handleDelete(_id)} class="btn btn-xs bg-red-500">Remove User</label>
+                <label for="delete-modal" onClick={() => handleDelete(_id)} class="btn btn-error rounded-full btn-sm text-white">Remove User</label>
             </td>
 
         </tr>
